@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queries>
+	<FilterRecord>
+		<![CDATA[
+		SELECT Departure_station_name,Return_station_name,duration,Covered_distance FROM BikeStations Where Departure_station_name =  @stationname;
+		]]>
+	</FilterRecord>
+
+	<GetAllStation>
+		<![CDATA[
+		SELECT Departure_station_name,Duration
+		From BikeStations Where ((Departure_station_id LIKE '%' + @stationname +'%')
+		  OR (Departure_station_name LIKE '%' + @stationname +'%')) ORDER BY Departure_station_name
+		OFFSET (@PageNumber-1)*@PageSize ROWS
+		FETCH NEXT @PageSize ROWS ONLY
+		]]>
+	</GetAllStation>
+	<AllResult>
+		<![CDATA[
+		SELECT Departure_station_name,Duration
+		From BikeStations ORDER BY Departure_station_name
+		OFFSET (@PageNumber-1)*@PageSize ROWS
+		FETCH NEXT @PageSize ROWS ONLY
+		]]>
+	</AllResult>
+	<Additional>
+		<![CDATA[
+		SELECT TOP 5 Departure_station_name, 
+		COUNT (*) As DepartureStation, 
+		SUM(Covered_distance) AS TotalDistance,
+		AVG(Covered_distance) AS AverageDistance
+		FROM BikeStations GROUP BY Departure_station_name order by DepartureStation DESC;
+		]]>
+	</Additional>
+	<ReturnPopular>
+		<![CDATA[
+		SELECT TOP 5 Return_station_name, 
+		COUNT (*) As ReturnStation, 
+		SUM(Covered_distance) AS TotalDistance,
+		AVG(Covered_distance) AS AverageDistance
+		FROM BikeStations GROUP BY Return_station_name order by ReturnStation DESC;
+		]]>
+	</ReturnPopular>
+	<FilterByMonth>
+		<![CDATA[
+		SELECT * , (SELECT COUNT(*) FROM BikeStations WHERE datepart(month,Departure) = @month and datepart(year,Departure) = @year) AS TotalCount FROM BikeStations 
+		WHERE datepart(month,Departure) = @month and datepart(year,Departure) = @year ORDER BY Departure OFFSET (@PageNumber-1)*@PageSize ROWS FETCH NEXT @PageSize ROWS ONLY;
+		]]>
+	</FilterByMonth>
+</Queries>
