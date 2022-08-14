@@ -27,17 +27,16 @@
         > dotnet run --project ./Project.API
         ```
         Open a Postman, or you can enable swggare built in the project startup and navigate to http://localhost:5047 and you're all set!
-###  NB: Before starting navigation you should change Database user name and Password as per your configration. The run the following dotnet commnd
-##  to set up and creating database. Migration already generated no need to use the first dotnet command but if not working properly you can remove 
-##  the existing migration folder and rune the commands. Do not forget to Update command to create table in the Databse. 
-###      ```Create Database: and change the confugration in the Project.Api (appsetting.json) file. (I am using Azure database so change it as per your database configuration)
+####  NB: Before starting navigation you should change Database user name and Password as per your configration. The run the following dotnet commnd to set up and creating database. Migration already generated no need to use the first dotnet command but if not working properly you can remove the existing migration folder and rune the commands. Do not forget to Update command to create table in the Databse. 
+####      ```Create Database: and change the confugration in the Project.Api (appsetting.json) file. (I used Azure database so change it as per your database configuration)
        
       "ConnectionStrings":
       {
       "DefaultConnection": "Server=localhost,1433;Initial Catalog=StationDB;Persist Security Info=False;User
       ID=user DB userName;Password=yourPassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
       },
-##     After Configure Your Database run the following in the terminal like or CMD or you can use Visual studio terminal
+###     After Configure Your Database run the following in the terminal like or CMD or you can use Visual studio terminal
+       ```
       > dotnet ef migrations add InitialCreate --context StationsContext --output-dir Migration
       > dotnet ef database update
        ```
