@@ -41,6 +41,9 @@
       > dotnet ef database update
        ```
 ## How to Browse the api using POSTMAN?
+### Copy and Pest the following Docker Container Image URL to your POSTMAN workspace envirnoment
     ...
-    ### Please check The README file in the src folder. 
+    developer.e6a0f0heb6akgwef.swedencentral.azurecontainer.io/
     ...
+### Then Copy and Pest the following frontend url:To Import data
+        1. POST:  api/Dataimport
