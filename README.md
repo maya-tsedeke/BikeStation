@@ -1,4 +1,4 @@
-# City bike app (Backend using C# Dotnet)
+# City bike app (Backend using C# Dotnet6)
 ## The API layer, ApplicationCore layer, and Infrastructure layer are the three levels that make up this project's structure, which follows clean architecture approaches.
 ### .NET Core web api (Backend in C#), Docker Running (Container instances), Source code in Github
 ## Development Envirnoment
