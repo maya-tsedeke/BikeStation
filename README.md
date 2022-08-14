@@ -30,4 +30,7 @@
 	AutoMapper.Extensions.Microsoft.DependencyInjection
 ##### To Setup and install all packages you must install the dotnet EF tools for either Linux or Windows based on your Interest. The project developed with .NET 6 version. But you can change it in the project carefully.
 The EF Core tools must installed globally using the.NET Entity Framework Core tools (dotnet ef), which may be be updated using the run dotnet tool update -g dotnet-ef command if you are using Linux based envirnoments.
-	
+### This project contains 3 interconnected applications:
+	1.  Project.API,
+	2.  Project.ApplicationCore,
+	3.  Projec.Infrastructure.
