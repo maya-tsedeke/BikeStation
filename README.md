@@ -11,7 +11,7 @@
 	Docker hub Account
 	Microsoft Azure Account
 	Github Account
-###: Required Packages
+### Required Packages
 #### In the ApplicationCore Project:
 	AutoMapper.Extensions.Microsoft.DependencyInjection
 	Microsoft.Extensions.Logging.Abstractions
