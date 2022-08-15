@@ -1,8 +1,4 @@
 # City Bike Backend Sample Code in C# Using Clean Architecture structure:
-##  We applied three layers
-###    1. Project.Api
-###    2. Project.AplicationCore
-###    3. Project.Infrastructure
 
 ## To get started, follow the below steps:
 
@@ -64,7 +60,8 @@ Go to Project.Api directory, open windows cmd console and type : Before that cha
 ```
 dotnet clean
 dotnet build
-dotnet run
+docker build -t YourdockerUserName/solita .
+docker run -p 5001:80 dockerUserName/solita
 ```
 ![image](https://user-images.githubusercontent.com/32611349/184603495-99b59a07-1962-4ecc-bbf8-c1b776552518.png)
 Before running in localhost, don't forget to build the StationDB database and change the URL's User ID and Password. Then, use the aforementioned commands to perform Migration and Update database.```
