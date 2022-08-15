@@ -168,7 +168,7 @@ Result:
  developer.e6a0f0heb6akgwef.swedencentral.azurecontainer.io/api/Dataimport
  
  Result:
- ![image](https://user-images.githubusercontent.com/32611349/184604585-63c30e30-5397-44e1-a571-7ad46cb41b2f.png)
+![image](https://user-images.githubusercontent.com/32611349/184642818-074d1e6d-b159-4b94-ae9b-23636801568d.png)
  
  Update
 ![image](https://user-images.githubusercontent.com/32611349/184605370-d5065692-9331-446b-98be-bc962db2b04b.png)
