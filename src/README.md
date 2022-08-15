@@ -57,3 +57,17 @@
 |POST        |/api/Create                   | add a new station to DB                        | {Host url}/api/Create
 | PUT        |/api/Update/id                | modify an existing journey in storage          | {Host url}/api/Update/5
 | DELETE     |/api/Delete/id                | delete an existing journey with given id       | {Host url}/api/Delete/5
+## How to run the web api Locally without docker running:
+Download the project from github
+Go to Project.Api directory, open windows cmd console and type : Before that change your database connection string in the Project.Api/appsettings.json
+
+```
+dotnet clean
+dotnet build
+dotnet run
+```
+```
+Then copy and pest your localhost url with its Posrt Number (5047/7014): example:[ http://localhost:7014/swagger/index.html]
+```
+Then access webapi endpoints with urls : 
+```
