@@ -151,8 +151,14 @@ The result should be as follows:
             Success
 ##### The database and URL are functional if this URL can successfully retrieve some data from the database in your browser. You can carry on testing with POSTMAN or any other testing software.
 ![image](https://user-images.githubusercontent.com/32611349/184603247-2399e410-b36c-44c1-86f4-3b147c67adbd.png)
- developer.e6a0f0heb6akgwef.swedencentral.azurecontainer.io/Additional/FilterByMonth?PageNumber=1&PageSize=5&Month=6&Year=2021
-
+ developer.e6a0f0heb6akgwef.swedencentral.azurecontainer.io/Additional/FilterByMonth?PageNumber=1&PageSize=10&Month=7&Year=2021
+     Request:   
+        {
+          "pageNumber": 1,
+          "pageSize": 10,
+          "month": 7,
+          "year": 2021
+        }
 Result:
 ![image](https://user-images.githubusercontent.com/32611349/184603940-86f89469-4172-4bc3-99f3-dda224c56e8b.png)
 
