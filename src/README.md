@@ -50,8 +50,8 @@
 | :----------| ----------------------------- | ----------------------------------------------| -----------------------------
 | GET        |/api/Additional               | get all popular stations                       | {Host url}/api/Additional
 | GET        |/api/Journeys                 | search the station given a search key          | {Host url}/api/Journeys/?SearchKey=Viiskulma
-| Get        |/api/Additional/FilterByMonth | Filter by using Month and Year for Departure   |{Host url}/api/Additional/FilterByMonth?PageNumber=1&PageSize=10& Month=6&
-|            |                              |                                                | Year=2021
+| Get        |/api/Additional/FilterByMonth | Filter by using Month and Year for Departure   |{Host url}/api/Additional/FilterByMonth?PageNumber=1&PageSize=10&Year=2021 Month=6&
+|            |                              |                                                | 
 |POST        |/api/Dataimport               |Used to import CSV file data
 |POST        |/api/Create                   | add a new station to DB                        | {Host url}/api/Create
 | PUT        |/api/Update/id                | modify an existing journey in storage          | {Host url}/api/Update/5
