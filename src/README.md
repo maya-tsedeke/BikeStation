@@ -73,5 +73,6 @@ Then use the local urls to access the aforementioned web API endpoints: The Api 
 ```
 ### Use the following DOCKER running URL in any testing tools to run on my Azure container instance. To check whether the URL is functional or not, first utilize the following url in your computer browser. If the database connection is unsuccessful, please contact me at tsedeke2018@gmail.com or In the project comment line, type your remark.
         developer.e6a0f0heb6akgwef.swedencentral.azurecontainer.io/api/Additional
-        The database and URL are functional if this URL can successfully retrieve some data from the database in your browser. You can carry on testing with POSTMAN or any other testing software.
-### NB: To incorporate Frontend I'm creating an android-based CRUD application. Within the next three days, I'll push.
+ 
+##### The database and URL are functional if this URL can successfully retrieve some data from the database in your browser. You can carry on testing with POSTMAN or any other testing software.
+   ### NB: To incorporate Frontend I'm creating an android-based CRUD application. Within the next three days, I'll push.
