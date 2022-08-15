@@ -147,4 +147,6 @@ The result should be as follows:
             200	
             Success
 ##### The database and URL are functional if this URL can successfully retrieve some data from the database in your browser. You can carry on testing with POSTMAN or any other testing software.
+![image](https://user-images.githubusercontent.com/32611349/184602932-9d6fe4c5-24c4-47bd-8593-8170ddd4381c.png)
+
    ### NB: To incorporate Frontend I'm creating an android-based CRUD application. Within the next three days, I'll push.
