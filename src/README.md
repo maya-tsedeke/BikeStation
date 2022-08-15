@@ -73,77 +73,78 @@ Then use the local urls to access the aforementioned web API endpoints: The Api 
 ```
 ### Use the following DOCKER running URL in any testing tools to run on my Azure container instance. To check whether the URL is functional or not, first utilize the following url in your computer browser. If the database connection is unsuccessful, please contact me at tsedeke2018@gmail.com or In the project comment line, type your remark.
         developer.e6a0f0heb6akgwef.swedencentral.azurecontainer.io/api/Additional
-The result should be as follows: 
-        Code	Details
-        200	
-        Response body
-        Download
-        {
-          "isSuccess": true,
-          "message": "Successful",
-          "top5PopularDepartureStationn": [
+The result should be as follows:
+
+            Code	Details
+            200	
+            Response body
+            Download
             {
-              "popular_Departure_stations": "DaadDaad",
-              "average_distance_startingFrom_station": 0,
-              "numberOfStartingJourney": 4
-            },
-            {
-              "popular_Departure_stations": "Kalevankatu",
-              "average_distance_startingFrom_station": 2256,
-              "numberOfStartingJourney": 2
-            },
-            {
-              "popular_Departure_stations": "Käpylän asema",
-              "average_distance_startingFrom_station": 3328,
-              "numberOfStartingJourney": 2
-            },
-            {
-              "popular_Departure_stations": "Linnanmäki",
-              "average_distance_startingFrom_station": 6592,
-              "numberOfStartingJourney": 2
-            },
-            {
-              "popular_Departure_stations": "Viiskulma",
-              "average_distance_startingFrom_station": 4327,
-              "numberOfStartingJourney": 2
+              "isSuccess": true,
+              "message": "Successful",
+              "top5PopularDepartureStationn": [
+                {
+                  "popular_Departure_stations": "DaadDaad",
+                  "average_distance_startingFrom_station": 0,
+                  "numberOfStartingJourney": 4
+                },
+                {
+                  "popular_Departure_stations": "Kalevankatu",
+                  "average_distance_startingFrom_station": 2256,
+                  "numberOfStartingJourney": 2
+                },
+                {
+                  "popular_Departure_stations": "Käpylän asema",
+                  "average_distance_startingFrom_station": 3328,
+                  "numberOfStartingJourney": 2
+                },
+                {
+                  "popular_Departure_stations": "Linnanmäki",
+                  "average_distance_startingFrom_station": 6592,
+                  "numberOfStartingJourney": 2
+                },
+                {
+                  "popular_Departure_stations": "Viiskulma",
+                  "average_distance_startingFrom_station": 4327,
+                  "numberOfStartingJourney": 2
+                }
+              ],
+              "top5PopularReturnStationn": [
+                {
+                  "popular_return_stations": "",
+                  "average_distance_ending_at_station": 0,
+                  "numberOfEndingJourney": 6
+                },
+                {
+                  "popular_return_stations": "Oulunkylän asema",
+                  "average_distance_ending_at_station": 3328,
+                  "numberOfEndingJourney": 2
+                },
+                {
+                  "popular_return_stations": "RRRRRRR67",
+                  "average_distance_ending_at_station": 18,
+                  "numberOfEndingJourney": 2
+                },
+                {
+                  "popular_return_stations": "Välimerenkatu",
+                  "average_distance_ending_at_station": 2256,
+                  "numberOfEndingJourney": 2
+                },
+                {
+                  "popular_return_stations": "Melkonkuja",
+                  "average_distance_ending_at_station": 2656,
+                  "numberOfEndingJourney": 1
+                }
+              ]
             }
-          ],
-          "top5PopularReturnStationn": [
-            {
-              "popular_return_stations": "",
-              "average_distance_ending_at_station": 0,
-              "numberOfEndingJourney": 6
-            },
-            {
-              "popular_return_stations": "Oulunkylän asema",
-              "average_distance_ending_at_station": 3328,
-              "numberOfEndingJourney": 2
-            },
-            {
-              "popular_return_stations": "RRRRRRR67",
-              "average_distance_ending_at_station": 18,
-              "numberOfEndingJourney": 2
-            },
-            {
-              "popular_return_stations": "Välimerenkatu",
-              "average_distance_ending_at_station": 2256,
-              "numberOfEndingJourney": 2
-            },
-            {
-              "popular_return_stations": "Melkonkuja",
-              "average_distance_ending_at_station": 2656,
-              "numberOfEndingJourney": 1
-            }
-          ]
-        }
-        Response headers
-         content-type: application/json; charset=utf-8 
-         date: Mon,15 Aug 2022 07:13:08 GMT 
-         server: Kestrel 
-         transfer-encoding: chunked 
-        Responses
-        Code	Description	Links
-        200	
-        Success
+            Response headers
+             content-type: application/json; charset=utf-8 
+             date: Mon,15 Aug 2022 07:13:08 GMT 
+             server: Kestrel 
+             transfer-encoding: chunked 
+            Responses
+            Code	Description	Links
+            200	
+            Success
 ##### The database and URL are functional if this URL can successfully retrieve some data from the database in your browser. You can carry on testing with POSTMAN or any other testing software.
    ### NB: To incorporate Frontend I'm creating an android-based CRUD application. Within the next three days, I'll push.
