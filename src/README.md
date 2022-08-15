@@ -152,12 +152,24 @@ The result should be as follows:
 ##### The database and URL are functional if this URL can successfully retrieve some data from the database in your browser. You can carry on testing with POSTMAN or any other testing software.
 ![image](https://user-images.githubusercontent.com/32611349/184603247-2399e410-b36c-44c1-86f4-3b147c67adbd.png)
  developer.e6a0f0heb6akgwef.swedencentral.azurecontainer.io/Additional/FilterByMonth?PageNumber=1&PageSize=5&Month=6&Year=2021
+
 Result:
 ![image](https://user-images.githubusercontent.com/32611349/184603940-86f89469-4172-4bc3-99f3-dda224c56e8b.png)
 
 ![image](https://user-images.githubusercontent.com/32611349/184604157-bdcfef41-8c83-4e11-91d6-d474cfbdba51.png)
  developer.e6a0f0heb6akgwef.swedencentral.azurecontainer.io/api/Dataimport
+ 
  Result:
  ![image](https://user-images.githubusercontent.com/32611349/184604585-63c30e30-5397-44e1-a571-7ad46cb41b2f.png)
+ 
+ Update
+![image](https://user-images.githubusercontent.com/32611349/184605370-d5065692-9331-446b-98be-bc962db2b04b.png)
 
+        Request: 
+        {
+          "return_station_id": "0909",
+          "return_station_name": "Kateskamentie",
+          "covered_distance": 567,
+          "duration": 0
+        }
    ### NB: To incorporate Frontend I'm creating an android-based CRUD application. Within the next three days, I'll push.
