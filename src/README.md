@@ -42,9 +42,7 @@
        ```
 ## How to Browse the api using POSTMAN?
 ### Copy and Pest the following Docker Container Image URL to your POSTMAN workspace envirnoment
-    ...
-  {Host url}: developer.e6a0f0heb6akgwef.swedencentral.azurecontainer.io/
-    ...
+    {Host url}: developer.e6a0f0heb6akgwef.swedencentral.azurecontainer.io/ 
 ## Available api endpoints
 
 
@@ -52,8 +50,9 @@
 | :----------| ----------------------------- | ----------------------------------------------| -----------------------------
 | GET        |/api/Additional               | get all popular stations                       | {Host url}/api/Additional
 | GET        |/api/Journeys                 | search the station given a search key          | {Host url}/api/Journeys/?SearchKey=Viiskulma
-| Get        |/api/Additional/FilterByMonth | Filter by using Month and Year for Departure   |/api/Additional/FilterByMonth?PageNumber=1&PageSize=10& Month=6&
+| Get        |/api/Additional/FilterByMonth | Filter by using Month and Year for Departure   |{Host url}/api/Additional/FilterByMonth?PageNumber=1&PageSize=10& Month=6&
 |            |                              |                                                | Year=2021
-| POST       |/api/Create                   | add a new station to DB                        | {Host url}/api/Create
+|POST        |/api/Dataimport               |Used to import CSV file data
+|POST        |/api/Create                   | add a new station to DB                        | {Host url}/api/Create
 | PUT        |/api/Update/id                | modify an existing journey in storage          | {Host url}/api/Update/5
 | DELETE     |/api/Delete/id                | delete an existing journey with given id       | {Host url}/api/Delete/5
