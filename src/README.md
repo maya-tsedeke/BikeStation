@@ -34,7 +34,7 @@
       "DefaultConnection": "Server=localhost,1433;Initial Catalog=StationDB;Persist Security Info=False;User
       ID=user DB userName;Password=yourPassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
       },
-###     After Configure Your Database run the following in the terminal like or CMD or you can use Visual studio terminal
+###     Run the following commands in the terminal after configuring your database, such as CMD or Visual Studio's terminal.
        ```
        dotnet ef migrations add InitialCreate --context StationsContext --output-dir Migration (If not working Use --> dotnet ef migrations add InitialCreate)
        dotnet ef database update
