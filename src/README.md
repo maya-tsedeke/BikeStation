@@ -39,8 +39,11 @@
        dotnet ef migrations add InitialCreate --context StationsContext --output-dir Migration (If not working Use --> dotnet ef migrations add InitialCreate)
        dotnet ef database update
        ```
+You can skip the database configuration if you only want to verify without making any changes. The Azure database already has the data attached. If your data does not require privacy, you can disconnect from the database altogether and replace with your connection string.
+
 ## How to Browse the api using POSTMAN?
-### Copy and Pest the your Docker Container Image URL  to your POSTMAN workspace envirnoment
+
+#### Copy your Docker Container Image local host URL and paste it into your POSTMAN workspace environment.
     eg. I am using this Host URL from Azure container instances {Host url}: developer.e6a0f0heb6akgwef.swedencentral.azurecontainer.io/ 
 ## Available api endpoints
 
